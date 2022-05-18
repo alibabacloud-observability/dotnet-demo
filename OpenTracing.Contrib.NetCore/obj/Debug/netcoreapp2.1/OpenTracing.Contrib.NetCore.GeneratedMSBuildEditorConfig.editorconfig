@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = OpenTracing.Contrib.NetCore
+build_property.ProjectDir = c:\Users\admin\Downloads\xtrace-demo\OpenTracing.Contrib.NetCore\

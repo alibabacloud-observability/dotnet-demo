@@ -1,0 +1,9 @@
+D:\dev\jaegerDotNetDemo\GreeterShared\bin\Debug\netcoreapp2.1\GreeterShared.deps.json
+D:\dev\jaegerDotNetDemo\GreeterShared\bin\Debug\netcoreapp2.1\GreeterShared.dll
+D:\dev\jaegerDotNetDemo\GreeterShared\obj\Debug\netcoreapp2.1\GreeterShared.csproj.CoreCompileInputs.cache
+D:\dev\jaegerDotNetDemo\GreeterShared\obj\Debug\netcoreapp2.1\GreeterShared.AssemblyInfoInputs.cache
+D:\dev\jaegerDotNetDemo\GreeterShared\obj\Debug\netcoreapp2.1\GreeterShared.AssemblyInfo.cs
+D:\dev\jaegerDotNetDemo\GreeterShared\obj\Debug\netcoreapp2.1\GreeterShared.csprojAssemblyReference.cache
+D:\dev\jaegerDotNetDemo\GreeterShared\bin\Debug\netcoreapp2.1\GreeterShared.pdb
+D:\dev\jaegerDotNetDemo\GreeterShared\obj\Debug\netcoreapp2.1\GreeterShared.dll
+D:\dev\jaegerDotNetDemo\GreeterShared\obj\Debug\netcoreapp2.1\GreeterShared.pdb

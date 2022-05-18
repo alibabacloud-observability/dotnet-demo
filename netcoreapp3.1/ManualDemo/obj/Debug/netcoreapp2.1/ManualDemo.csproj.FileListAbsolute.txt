@@ -1,0 +1,11 @@
+D:\dev\jaegerDotNetDemo\ManualDemo\bin\Debug\netcoreapp2.1\ManualDemo.deps.json
+D:\dev\jaegerDotNetDemo\ManualDemo\bin\Debug\netcoreapp2.1\ManualDemo.runtimeconfig.json
+D:\dev\jaegerDotNetDemo\ManualDemo\bin\Debug\netcoreapp2.1\ManualDemo.runtimeconfig.dev.json
+D:\dev\jaegerDotNetDemo\ManualDemo\bin\Debug\netcoreapp2.1\ManualDemo.dll
+D:\dev\jaegerDotNetDemo\ManualDemo\obj\Debug\netcoreapp2.1\ManualDemo.csprojAssemblyReference.cache
+D:\dev\jaegerDotNetDemo\ManualDemo\obj\Debug\netcoreapp2.1\ManualDemo.csproj.CoreCompileInputs.cache
+D:\dev\jaegerDotNetDemo\ManualDemo\obj\Debug\netcoreapp2.1\ManualDemo.AssemblyInfoInputs.cache
+D:\dev\jaegerDotNetDemo\ManualDemo\obj\Debug\netcoreapp2.1\ManualDemo.AssemblyInfo.cs
+D:\dev\jaegerDotNetDemo\ManualDemo\bin\Debug\netcoreapp2.1\ManualDemo.pdb
+D:\dev\jaegerDotNetDemo\ManualDemo\obj\Debug\netcoreapp2.1\ManualDemo.dll
+D:\dev\jaegerDotNetDemo\ManualDemo\obj\Debug\netcoreapp2.1\ManualDemo.pdb

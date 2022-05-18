@@ -1,0 +1,14 @@
+D:\dev\jaegerDotNetDemo\GreeterClient\bin\Debug\netcoreapp2.1\GreeterClient.deps.json
+D:\dev\jaegerDotNetDemo\GreeterClient\bin\Debug\netcoreapp2.1\GreeterClient.runtimeconfig.json
+D:\dev\jaegerDotNetDemo\GreeterClient\bin\Debug\netcoreapp2.1\GreeterClient.runtimeconfig.dev.json
+D:\dev\jaegerDotNetDemo\GreeterClient\bin\Debug\netcoreapp2.1\GreeterClient.dll
+D:\dev\jaegerDotNetDemo\GreeterClient\bin\Debug\netcoreapp2.1\GreeterClient.pdb
+D:\dev\jaegerDotNetDemo\GreeterClient\bin\Debug\netcoreapp2.1\GreeterShared.dll
+D:\dev\jaegerDotNetDemo\GreeterClient\bin\Debug\netcoreapp2.1\GreeterShared.pdb
+D:\dev\jaegerDotNetDemo\GreeterClient\obj\Debug\netcoreapp2.1\GreeterClient.csproj.CoreCompileInputs.cache
+D:\dev\jaegerDotNetDemo\GreeterClient\obj\Debug\netcoreapp2.1\GreeterClient.AssemblyInfoInputs.cache
+D:\dev\jaegerDotNetDemo\GreeterClient\obj\Debug\netcoreapp2.1\GreeterClient.AssemblyInfo.cs
+D:\dev\jaegerDotNetDemo\GreeterClient\obj\Debug\netcoreapp2.1\GreeterClient.csproj.CopyComplete
+D:\dev\jaegerDotNetDemo\GreeterClient\obj\Debug\netcoreapp2.1\GreeterClient.dll
+D:\dev\jaegerDotNetDemo\GreeterClient\obj\Debug\netcoreapp2.1\GreeterClient.pdb
+d:\dev\jaegerDotNetDemo\GreeterClient\obj\Debug\netcoreapp2.1\GreeterClient.csprojAssemblyReference.cache
