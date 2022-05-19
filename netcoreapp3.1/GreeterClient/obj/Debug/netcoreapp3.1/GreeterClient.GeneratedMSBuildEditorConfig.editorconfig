@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = GreeterClient
+build_property.ProjectDir = c:\Users\admin\Downloads\xtrace-demo\netcoreapp3.1\GreeterClient\
