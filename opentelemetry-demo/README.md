@@ -87,7 +87,7 @@ dotnet run
 ## 方法二：自动埋点
 OpenTelemetry支持自动上传数十种.NET框架Trace的数据，详细的.NET框架列表请参见[Supported Libraries](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/blob/main/docs/config.md#traces-instrumentations)。需要注意，目前支持自动上传Trace数据的OpenTelemetry .NET包为预览版本而非稳定版本。
 
-1. 进入示例代码仓库的路径dotnet-demo/opentelemetry-demo/auto-demo，创建ASP.NET Core应用（Web应用），请替换<your-project-name>为您自己的项目名。
+1. 进入示例代码仓库的路径dotnet-demo/opentelemetry-demo，创建ASP.NET Core应用（Web应用），请替换<your-project-name>为您自己的项目名。
 ```csharp
 mkdir <your-project-name>
 cd <your-project-name>
