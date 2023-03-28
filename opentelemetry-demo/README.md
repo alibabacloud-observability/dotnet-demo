@@ -128,7 +128,7 @@ public static class DiagnosticsConfig
 ```
 
 - 添加OpenTelemetry初始化代码（使用HTTP协议上报）
-   - 请将以下代码中的`<http_token>`替换成前提条件中获取的Token
+   - 请将以下代码中的`<http_endpoint>`替换成前提条件中获取的Token
 ```csharp
 // ...
 builder.Services.AddOpenTelemetry()
@@ -153,7 +153,7 @@ builder.Services.AddOpenTelemetry()
 ```
 
 - 如果您使用gRPC协议上报，请使用以下OpenTelemetry初始化代码
-   - 请将以下代码中`<grpc_token>`替换成前提条件中获取的Token，将`<endpoint>`替换成对应地域的Endpoint
+   - 请将以下代码中`<grpc_endpoint>`替换成前提条件中获取的Token，将`<endpoint>`替换成对应地域的Endpoint
 ```csharp
 // ...
 builder.Services.AddOpenTelemetry()
