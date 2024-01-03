@@ -1,10 +1,88 @@
 # 通过OpenTelemetry上报.NET应用数据
 
 ## 项目目录说明
-1. manual-demo: 使用OpenTelemetry .NET SDK手动埋点
-2. auto-demo: 自动埋点
+1. auto-demo: 自动埋点
+2. manual-demo: 手动埋点
+3. semi-auto-demo: 半自动埋点
 
-## 方法一：使用OpenTelemetry .NET SDK手动埋点
+## 方法一：自动埋点
+### 1. 版本限制
+* .NET SDK 6+
+* .NET Framework 暂不支持自动埋点
+  
+### 2. 使用 ASP.NET Core 编写 Web 应用
+
+* 创建 Demo 应用
+```
+mkdir dotnet-simple-demo
+cd dotnet-simple-demo
+dotnet new web
+```
+
+* 将 Properties/launchSettings.json 文件中的内容替换成下面的配置
+```json
+{
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    "http": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "applicationUrl": "http://localhost:8080",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
+```
+
+* 构建应用
+```
+dotnet build
+```
+
+### 3. 为应用配置自动埋点
+
+* 下载并执行 OpenTelemetry .NET 自动埋点安装脚本
+```
+curl -L -O https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/releases/latest/download/otel-dotnet-auto-install.sh
+
+./otel-dotnet-auto-install.sh
+```
+
+* 设置环境变量并运行 OpenTelemetry .NET 自动埋点脚本
+  * 请将`<serviceName>`替换为您的服务名、`<endpoint>`替换为接入点、`<token>`替换为鉴权Token。
+```
+export OTEL_TRACES_EXPORTER=otlp \
+  OTEL_METRICS_EXPORTER=none \
+  OTEL_LOGS_EXPORTER=none \
+  OTEL_SERVICE_NAME=<serviceName> \
+  OTEL_EXPORTER_OTLP_PROTOCOL=grpc
+  OTEL_EXPORTER_OTLP_ENDPOINT=<endpoint> \
+  OTEL_EXPORTER_OTLP_HEADERS="Authentication=<token>"
+. $HOME/.otel-dotnet-auto/instrument.sh
+```
+
+> 更多 OpenTelemetry .NET 自动埋点的环境变量配置，请参考 [OpenTelemetry .NET 自动埋点环境变量](https://opentelemetry.io/docs/instrumentation/net/automatic/config/)
+
+
+### 4. 运行并访问应用
+* 运行应用
+```
+dotnet run
+```
+
+* 使用以下命令访问应用，生成的调用链会自动上报至可观测链路 OpenTelemetry 版
+```
+curl localhost:8080/
+```
+
+* 查看链路数据
+  
+  您在可观测链路 OpenTelemetry 版控制台按照自定义的应用名称搜索应用，查看上报的数据。
+
+## 方法二：手动埋点
 
 1. 进入示例代码仓库的路径dotnet-demo/opentelemetry-demo/manual-demo，然后安装手动埋点所需的OpenTelemetry相关依赖。
 ```bash
@@ -84,7 +162,7 @@ dotnet run
 5. 启动本地示例程序，在链路追踪Tracing Analysis控制台按照自定义的应用名称搜索应用，查看上报的数据。
 
 
-## 方法二：自动埋点
+## 方法三：半自动埋点
 OpenTelemetry支持自动上传数十种.NET框架Trace的数据，详细的.NET框架列表请参见[Supported Libraries](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/blob/main/docs/config.md#traces-instrumentations)。需要注意，目前支持自动上传Trace数据的OpenTelemetry .NET包为预览版本而非稳定版本。
 
 1. 进入示例代码仓库的路径dotnet-demo/opentelemetry-demo，创建ASP.NET Core应用（Web应用），请替换<your-project-name>为您自己的项目名。
